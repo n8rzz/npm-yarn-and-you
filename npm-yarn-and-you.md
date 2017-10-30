@@ -42,14 +42,14 @@ Node Package Manager is packaged with `Node`
 
 
 # yarn
-Yarn was developed by engineers from Facebook, Exponent, Google, and Tilde to solve.  Facebook had used npm extensively for numerous projects, but had trouble scaling it for internal use as it posed issues with performance and security [1][facebook-launches-yarn-a-faster-npm-client].
+Yarn was developed by engineers from Facebook, Exponent, Google, and Tilde to solve.  Facebook had used npm extensively for numerous projects, but had trouble scaling it for internal use as it posed issues with performance and security [([facebook-launches-yarn-a-faster-npm-client])][facebook-launches-yarn-a-faster-npm-client].
 
 ## features
 - `yarn install` installs, in parallel, only dependencies listed in `yarn.lock`, or `package.json` if `yarn.lock` does not exist
 - Caches every download
 - Allows for offline installs as long as the package has been installed before
-- Flat mode resolve mismatching versions of dependencies to a single version to avoid creating duplicates [2][facebooks-yarn-vs-npm-is-yarn-really-better]
-- A single request failing won’t cause an install to fail. Requests are retried upon failure [3][facebooks-yarn-vs-npm-is-yarn-really-better]
+- Flat mode resolve mismatching versions of dependencies to a single version to avoid creating duplicates [([facebooks-yarn-vs-npm-is-yarn-really-better])][facebooks-yarn-vs-npm-is-yarn-really-better]
+- A single request failing won’t cause an install to fail. Requests are retried upon failure [([facebooks-yarn-vs-npm-is-yarn-really-better])][facebooks-yarn-vs-npm-is-yarn-really-better]
 - `yarn licenses` provides a group of commands for investigating dependency licenses
 - `yarn why` allows you to peek into the dependency graph to figure out why a given package is installed
 
@@ -60,7 +60,7 @@ Yarn was developed by engineers from Facebook, Exponent, Google, and Tilde to so
 
 
 # performance
-Yarn is generally faster except when there is no lockfile or cache [4][npm-v5-3-0-vs-yarn-0-27-5-speed]
+Yarn is generally faster except when there is no lockfile or cache [([npm-v5-3-0-vs-yarn-0-27-5-speed])][npm-v5-3-0-vs-yarn-0-27-5-speed]
 
 With the `Express Generator` using the following commands:
 ```bash
@@ -88,3 +88,11 @@ Maybe?
 
 # conclusion
 When I started this research, I was convinced that Yarn was a clear winner.  However, Npm 5 has added most of the features that Yarn aimed to add/improve.  The big one being support for deterministic installs with the use of a `package-json.lock` file.  If speed is a major concern, Yarn may be the way to go.  Yarn is going to be faster in most cases, but not all.
+
+# reference
+[package-managers][package-managers]
+[facebook-launches-yarn-a-faster-npm-client][facebook-launches-yarn-a-faster-npm-client]
+[npm-yarn-express-install][npm-yarn-express-install]
+[facebooks-yarn-vs-npm-is-yarn-really-better][facebooks-yarn-vs-npm-is-yarn-really-better]
+[npm-v5-3-0-vs-yarn-0-27-5-speed][npm-v5-3-0-vs-yarn-0-27-5-speed]
+[npm-github][npm-github]
