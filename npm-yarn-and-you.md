@@ -98,3 +98,4 @@ When I started this research, I was convinced that Yarn was a clear winner.  How
 - [npm-v5-3-0-vs-yarn-0-27-5-speed][npm-v5-3-0-vs-yarn-0-27-5-speed]
 - [npm-github][npm-github]
 - [yarn-github][yarn-github]
+- [jsAir - 047](http://audio.javascriptair.com/e/047-jsair-yarn-bonus-show-with-sebastian-mckenzie-konstantin-raev-yehuda-katz-and-christoph-pojer/)
